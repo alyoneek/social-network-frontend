@@ -12,7 +12,7 @@ const Button: FC<ButtonProps> = ({
   type = "button",
   color = "gray",
   children,
-  className,
+  className = "",
 }) => {
   return (
     <button

@@ -4,6 +4,7 @@
 .button {
   font-weight: $bold-font;
   border-radius: $button-border-radius;
+  font-size: $base-font-size;
   letter-spacing: 0.4px;
   width: max-content;
   padding: 0 30px;
@@ -27,5 +28,12 @@
     &:hover {
       background-color: $blue-hover;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    line-height: 40px;
+    padding: 0 25px;
   }
 }

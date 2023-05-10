@@ -1,0 +1,74 @@
+@import "@/styles/_colors.scss";
+@import "@/styles/_sizes.scss";
+
+.header {
+  min-height: 50px;
+  position: sticky;
+  top: 0;
+  box-shadow: $shadow-color;
+  background-color: $primary-bg-color;
+  z-index: 999;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 10px $container-x-padding;
+
+    .left {
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+          font-size: 40px;
+          color: $blue;
+        }
+
+        .name {
+          font-weight: $bold-font;
+          color: $secondary-heading-font-color;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        cursor: default;
+
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid $gray;
+        }
+      }
+
+      .logout {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 50%;
+        color: $blue;
+        transition: $hover-transition;
+
+        &:hover {
+          background-color: $gray;
+        }
+      }
+    }
+  }
+}

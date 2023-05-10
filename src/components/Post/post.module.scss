@@ -1,0 +1,102 @@
+@import "@/styles/_colors.scss";
+@import "@/styles/_sizes.scss";
+
+.post {
+  box-shadow: $shadow-color;
+  border-radius: $border-radius;
+  /* background-color: themed("bg");
+  color: themed("textColor"); */
+
+  .container {
+    padding: 20px;
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &Info {
+        display: flex;
+        gap: 20px;
+
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          border: 1px solid $gray;
+          object-fit: cover;
+        }
+
+        .details {
+          display: flex;
+          flex-direction: column;
+
+          .name {
+            font-weight: 500;
+          }
+
+          .date {
+            font-size: 12px;
+            color: $base-font-color;
+          }
+        }
+      }
+    }
+
+    .content {
+      margin: 20px 0px;
+
+      .description {
+        line-height: 26px;
+        color: $base-font-color;
+        font-size: $base-font-size;
+        font-weight: 500;
+      }
+
+      .showMoreLess {
+        color: $blue;
+        cursor: pointer;
+        font-weight: $bold-font;
+
+        &:hover {
+          color: $blue-hover;
+        }
+      }
+
+      img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        margin-top: 20px;
+        border-radius: 8px;
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 14px;
+
+        .likeIcon {
+          font-size: 25px;
+          transition: $hover-transition;
+
+          &.active {
+            color: $red;
+          }
+
+          &:hover {
+            color: $red-hover;
+          }
+        }
+      }
+    }
+  }
+}

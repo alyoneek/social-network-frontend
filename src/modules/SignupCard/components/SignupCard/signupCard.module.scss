@@ -46,12 +46,52 @@ $card-padding: 50px;
 
   .left {
     padding: $card-padding;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
     h1 {
       color: $secondary-heading-font-color;
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .card {
+    grid-template-columns: 1fr;
+
+    .right {
+      gap: 20px;
+      grid-row: 1 / 2;
+
+      h1 {
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .card {
+    .right {
+      padding: 30px;
+
+      h1 {
+        font-size: 45px;
+        line-height: 50px;
+      }
+    }
+
+    .left {
+      padding: 30px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    .right {
+      h1 {
+        font-size: 30px;
+      }
     }
   }
 }

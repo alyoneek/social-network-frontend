@@ -1,5 +1,7 @@
+import { PostsInfiniteList } from "@modules/posts";
+
 const Newsline = () => {
-  return <div>Newsline</div>;
+  return <PostsInfiniteList />;
 };
 
 export default Newsline;

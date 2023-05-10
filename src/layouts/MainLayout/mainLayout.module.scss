@@ -1,0 +1,20 @@
+@import "@/styles/_colors.scss";
+@import "@/styles/_sizes.scss";
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $container-x-padding;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: "sidebar main";
+  grid-gap: 20px;
+
+  .main {
+    grid-area: main;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+}
