@@ -1,0 +1,31 @@
+@import "@/styles/_sizes.scss";
+@import "@/styles/colors.scss";
+
+.button {
+  font-weight: $bold-font;
+  border-radius: $button-border-radius;
+  letter-spacing: 0.4px;
+  width: max-content;
+  padding: 0 30px;
+  line-height: 50px;
+
+  &.gray {
+    color: #343a40;
+    background-color: $gray;
+    transition: $hover-transition;
+
+    &:hover {
+      background-color: $gray-hover;
+    }
+  }
+
+  &.blue {
+    color: $secondary-font-color;
+    background-color: $blue;
+    transition: $hover-transition;
+
+    &:hover {
+      background-color: $blue-hover;
+    }
+  }
+}

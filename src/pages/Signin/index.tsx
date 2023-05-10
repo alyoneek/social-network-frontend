@@ -1,5 +1,9 @@
+// import styles from "./signup.module.scss";
+
+import { SigninCard } from "@/modules/SigninCard";
+
 const Signin = () => {
-  return <div>Signin</div>;
+  return <SigninCard />;
 };
 
 export default Signin;

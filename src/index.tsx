@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import Routes from "./routes/Routes";
 
+import "./styles/_reset.scss";
+
 const container = document.getElementById("root");
 
 if (container == null) {

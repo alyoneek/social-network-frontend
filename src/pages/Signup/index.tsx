@@ -1,5 +1,7 @@
+import { SignupCard } from "@modules/SignupCard";
+
 const Signup = () => {
-  return <div>Signup</div>;
+  return <SignupCard />;
 };
 
 export default Signup;

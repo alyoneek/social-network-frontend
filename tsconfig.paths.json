@@ -4,9 +4,11 @@
     "paths": {
       "@/*": ["*"],
       "@assets/*": ["./assets/*"],
+      "@styles/*": ["./styles/*"],
       "@helpers/*": ["./helpers/*"],
       "@layouts/*": ["./layouts/*"],
       "@pages/*": ["./pages/*"],
+      "@modules/*": ["./modules/*"],
       "@components/*": ["./components/*"],
       "@ui/*": ["./ui/*"]
     }
