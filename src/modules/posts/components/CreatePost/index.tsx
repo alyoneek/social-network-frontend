@@ -2,6 +2,7 @@ import { HiOutlinePhotograph } from "react-icons/hi";
 import { IoCreateOutline } from "react-icons/io5";
 
 import Button from "@ui/Button";
+import Textarea from "@ui/Textarea";
 
 import styles from "./createPost.module.scss";
 
@@ -17,7 +18,7 @@ const CreatePost = () => {
         </div>
 
         <div className={styles.content}>
-          <textarea placeholder="Что у вас нового?" />
+          <Textarea placeholder="Что у вас нового?" />
         </div>
         <div className={styles.info}>
           <div className={styles.photo}>

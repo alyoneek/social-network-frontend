@@ -1,0 +1,27 @@
+@import "@/styles/_colors.scss";
+@import "@/styles/_sizes.scss";
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: $base-font-size;
+
+  .icon {
+    font-size: 25px;
+    transition: $hover-transition;
+    cursor: pointer;
+
+    &.active {
+      color: $red;
+    }
+
+    &:hover {
+      color: $red-hover;
+    }
+  }
+
+  .likesCount {
+    font-weight: 500;
+  }
+}

@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import ShowMoreText from "react-show-more-text";
 
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import Like from "@components/Like";
 
 import styles from "./post.module.scss";
-
-const liked = true;
 
 const Post = () => {
   return (
@@ -56,16 +54,8 @@ const Post = () => {
             alt="postImage"
           />
         </div>
-        <div className={styles.info}>
-          <div className={styles.likes}>
-            {liked ? (
-              <AiFillHeart className={`${styles.icon} ${styles.active}`} />
-            ) : (
-              <AiOutlineHeart className={`${styles.icon}`} />
-            )}
-            <span className={styles.likesCount}>12 Likes</span>
-          </div>
-        </div>
+
+        <Like />
       </div>
     </div>
   );

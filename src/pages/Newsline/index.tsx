@@ -1,7 +1,12 @@
-import { CreatePost } from "@modules/posts";
+import { CreatePost, PostsInfiniteList } from "@modules/posts";
 
 const Newsline = () => {
-  return <CreatePost />;
+  return (
+    <>
+      <CreatePost />
+      <PostsInfiniteList />
+    </>
+  );
 };
 
 export default Newsline;

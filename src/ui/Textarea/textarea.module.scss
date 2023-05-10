@@ -1,0 +1,14 @@
+@import "@/styles/_sizes.scss";
+@import "@/styles/colors.scss";
+
+.textarea {
+  background-color: $secondary-bg-color;
+  border: 2px solid $gray;
+  border-radius: $border-radius;
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  font-weight: 500;
+  font-size: $base-font-size;
+  resize: vertical;
+}

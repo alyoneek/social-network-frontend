@@ -1,0 +1,22 @@
+@import "@/styles/_sizes.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-areas:
+    "about createPost"
+    "about posts";
+  grid-gap: $grid-gap;
+
+  .about {
+    grid-area: about;
+  }
+
+  .createPost {
+    grid-area: createPost;
+  }
+
+  .posts {
+    grid-area: posts;
+  }
+}

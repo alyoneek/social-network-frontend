@@ -1,0 +1,28 @@
+@import "@/styles/_colors.scss";
+@import "@/styles/_sizes.scss";
+
+.about {
+  background-color: $secondary-bg-color;
+  border-radius: $border-radius;
+  box-shadow: $shadow-color;
+  width: 100%;
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: $border-radius;
+    padding: 10px 20px;
+
+    .icon {
+      width: 25px;
+      color: #cbc8c8;
+    }
+
+    span {
+      font-size: 13px;
+      font-weight: $bold-font;
+      color: $secondary-heading-font-color;
+    }
+  }
+}

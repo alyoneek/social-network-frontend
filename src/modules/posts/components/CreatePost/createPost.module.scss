@@ -34,17 +34,6 @@
     .content {
       margin: 20px 0px;
 
-      textarea {
-        background-color: $secondary-bg-color;
-        border: 2px solid $gray;
-        border-radius: $border-radius;
-        width: 100%;
-        min-height: 100px;
-        padding: 20px;
-        font-weight: 500;
-        font-size: $base-font-size;
-      }
-
       .previewImage {
         width: 100%;
         max-height: 500px;
