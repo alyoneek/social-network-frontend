@@ -4,9 +4,14 @@
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-areas:
+    "main main"
     "about createPost"
     "about posts";
   grid-gap: $grid-gap;
+
+  .main {
+    grid-area: main;
+  }
 
   .about {
     grid-area: about;

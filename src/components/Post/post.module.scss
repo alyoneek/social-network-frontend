@@ -7,7 +7,7 @@
   background-color: $secondary-bg-color;
 
   .container {
-    padding: 20px;
+    padding: $inner-padding;
 
     .user {
       display: flex;
