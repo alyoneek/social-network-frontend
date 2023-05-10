@@ -57,13 +57,13 @@ const Post = () => {
           />
         </div>
         <div className={styles.info}>
-          <div className={styles.item}>
+          <div className={styles.likes}>
             {liked ? (
-              <AiFillHeart className={`${styles.likeIcon} ${styles.active}`} />
+              <AiFillHeart className={`${styles.icon} ${styles.active}`} />
             ) : (
-              <AiOutlineHeart className={`${styles.likeIcon}`} />
+              <AiOutlineHeart className={`${styles.icon}`} />
             )}
-            12 Likes
+            <span className={styles.likesCount}>12 Likes</span>
           </div>
         </div>
       </div>

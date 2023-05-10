@@ -1,3 +1,5 @@
+import CreatePost from "./components/CreatePost";
 import PostsInfiniteList from "./components/PostsInfiniteList";
 
-export { PostsInfiniteList };
+export { PostsInfiniteList, CreatePost };
+

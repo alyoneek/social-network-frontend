@@ -4,8 +4,7 @@
 .post {
   box-shadow: $shadow-color;
   border-radius: $border-radius;
-  /* background-color: themed("bg");
-  color: themed("textColor"); */
+  background-color: $secondary-bg-color;
 
   .container {
     padding: 20px;
@@ -77,16 +76,16 @@
       align-items: center;
       gap: 20px;
 
-      .item {
+      .likes {
         display: flex;
         align-items: center;
         gap: 10px;
-        cursor: pointer;
-        font-size: 14px;
+        font-size: $base-font-size;
 
-        .likeIcon {
+        .icon {
           font-size: 25px;
           transition: $hover-transition;
+          cursor: pointer;
 
           &.active {
             color: $red;
@@ -95,6 +94,10 @@
           &:hover {
             color: $red-hover;
           }
+        }
+
+        .likesCount {
+          font-weight: 500;
         }
       }
     }

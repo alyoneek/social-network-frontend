@@ -3,7 +3,7 @@ import styles from "./button.module.scss";
 
 interface ButtonProps {
   type?: "submit" | "button" | "reset";
-  color?: "gray" | "blue" | "white";
+  color?: "gray" | "blue" | "green";
   children?: ReactNode;
   className?: string;
 }

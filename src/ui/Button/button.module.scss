@@ -29,11 +29,21 @@
       background-color: $blue-hover;
     }
   }
+
+  &.green {
+    color: $secondary-font-color;
+    background-color: $green;
+    transition: $hover-transition;
+
+    &:hover {
+      background-color: $green-hover;
+    }
+  }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .button {
     line-height: 40px;
     padding: 0 25px;
   }
-}
+} */
